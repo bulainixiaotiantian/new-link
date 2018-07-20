@@ -89,3 +89,8 @@ img{
 		background-size:3.85rem 1.18rem ;
 		background-position: cover;
 	}
+@media only screen and (max-width: 330px) {
+	.download_btn{
+	    bottom: 1.25rem;
+	}
+}
