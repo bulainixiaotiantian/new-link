@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>账号管理</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+				
+			window.onload = function(){
+				var isWeixin = isWeiXin();
+				if(isWeixin){
+					document.getElementById("weixinDiv").style.display="block";
+				}
+			}
+			function isWeiXin(){
+				var ua = window.navigator.userAgent.toLowerCase();
+				if(ua.indexOf('micromessenger') != -1){
+					return true;
+				}else{
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="mainBj">
+		</div>
+		<div id="weixinDiv" class="layer"></div>
+		<div class="download_btn">
+			<a href="#">
+				<div class="anZhuo fl"></div>
+			</a>
+			
+			<a href="#">
+				<div class="apple fr"></div>
+			</a>
+		</div>
+	</body>
+	
+</html>
